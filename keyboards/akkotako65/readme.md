@@ -1,13 +1,10 @@
 # akkotako65
 
-![akkotako65](imgur.com image replace me!)
-
-This keyboard was created by Brandon Flexman, Colton Yates, Sam Warr, Sofia McNary, and Kevin James. The firmware for this keyboard was originally created by Sam Warr, with this version being forked by Brandon Flexman 
-for a slightly different keymap and additional keyboard features. This keyboard features two rotary encoders, an Elite-C microcontroller, Akko Cream Yellow switches, a custom PCB, and 3mm RGB neopixel LEDs.
+This keyboard was created by Brandon Flexman, Colton Yates, Sam Warr, Sofia McNary, and Kevin James. The firmware for this keyboard was originally created by [Sam Warr (sammothxc)](https://github.com/sammothxc/qmk_firmware), with this version being copied and modified by Brandon Flexman 
+for a different keymap and additional keyboard features. This 65%, 67-key keyboard features two rotary encoders, an Elite-C microcontroller, Akko Cream Yellow switches, a custom PCB, and 3mm RGB WS2812B LEDs.
 
 * Keyboard Maintainer: [Brandon Flexman](https://github.com/FlexyRexy)
-* Hardware Supported: Elite-C (ATMega32U4), EC11 Rotary Encoders, 10k-ohm resistors, Akko Cream Yellow Switches.
-* Hardware Availability: *Links to where you can find this hardware*
+* Hardware Supported: Elite-C (ATMega32U4), EC11 Rotary Encoders, 10k-ohm resistors, Akko Cream Yellow Switches, 3mm WS2812B LEDs.
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -21,9 +18,10 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 Features:
 * 67 keys
-* 2 rotary encoders *(to be implemented)*
-* WS2812B RGB underglow *(to be implemented)*
+* 2 rotary encoders
+* WS2812B RGB underglow 
 * Elite-C Pro Micro microcontroller
+* Akko Cream Yellow switches
 * USB-C
 * QMK Bootloader
 
@@ -58,8 +56,6 @@ Delete any extra stuff (most likely a and p flags) other than the necessary {w:#
 
 ** The `qmk import-kbfirmware` utility absolutely sucks and will sometimes mess up a few keys in the layout as well as screwing up pin assignments. Save yourself hours of headbanging and double check these two things if it isn't working as expected.
 
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
-
 ## Bootloader
 
 Before flashing, enter the bootloader in 3 ways:
@@ -69,5 +65,3 @@ Before flashing, enter the bootloader in 3 ways:
 * **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available
 
 After flashing, the bootloader can now be entered by pressing the lower FN key and Esc simultaneously.
-
-![layer1.png](keymaps/default/layer1.png)
